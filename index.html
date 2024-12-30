@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Погода</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <h1>[ Mono_Weather ]</h1>
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    placeholder="ENTER_CITY_NAME//" 
+                    id="city-input"
+                >
+                <button id="search-button">SHOW_WEATHER</button>
+            </div>
+            <div class="weather-info">
+                <h2 id="city-name">INITIALIZING...</h2>
+                <div class="weather-details">
+                    <img id="weather-icon" src="" alt="weather_status">
+                    <div class="temperature">
+                        <span id="temperature">--</span>°C
+                    </div>
+                    <div class="description" id="weather-description">SCANNING...</div>
+                    <div class="details">
+                        <div>HUMIDITY_LEVEL: <span id="humidity">--</span>%</div>
+                        <div>WIND_SPEED: <span id="wind-speed">--</span> M/S</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
